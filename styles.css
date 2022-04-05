@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    margin: 0;
+    height: 100px;
+    background-color: #C7CCAD;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar ul {
+    margin: 0;
+    padding-right: 0;
+    float: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.tab {
+    margin-left: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #446A71;
+}   
+   
+.navbar ul li a {
+    color: black;
+    display: block;
+    line-height: 2em;
+    padding: 1.5em 1.5em;
+    font-size: 1.3em;
+}
+
+#logo {
+    margin-left: 1em;
+    line-height: .5em;
+    font-size: 1.5em;
+    float: left;
+    color: black;
+}
+
+/* Home */
+.about_container {
+    margin-top: 100px;
+}
+
+.landing_pic {
+    background-image: url(assets/glass.jpg);
+    min-height: 840px;
+    opacity: .98;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.about {
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 2.5em;
+    width: 800px;
+    height: 640px;
+    border: 2px solid blanchedalmond;
+    background-color: rgb(255, 235, 205, .5);
+    font-size: 1.5em;
+}
+
+.about a {
+    color: darkolivegreen;
+}
+
+/* Recent Work */
+#work_header{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.khlalilah_container {
+    position: relative;
+}
+
+.khalilah_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    z-index: 10;
+    width: 50%;
+
+}
+
+.khalilah_btn  {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.khalilah_img:hover{
+    background-color: black;
+    filter: brightness(50%); 
+}
+  
+.khlalilah_container:hover .khalilah_btn {
+    opacity: 1;
+}
+
+#atm{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 3em;
+}
+
+.text {
+    background-color: rgb(255, 235, 205, .8);
+    color: black;
+    font-size: 30px;
+    padding: 16px 32px;
+    border: none;
+  }
+
+hr {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#moreinworks {
+    margin-top: -95px;
+}
+
+.more_container {
+    border: 2px solid blanchedalmond;
+    text-align: center;
+    background-color: rgb(255, 235, 205, .5);
+    width: 50%;
+    height: 400px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+  
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.icon_container {
+    position: absolute;
+    top: calc(40% + 30px);
+    left: calc(50% + 3px);
+
+}
+
+#icon_big {
+    position: absolute;
+    top: 23px;
+    right: 40px;
+}
+
+#icon_small {
+    position: absolute;
+    top: 52px;
+    left: 12px;
+}
+
+/* Cirriculum */
+.cirriculum_container{
+    margin: 200px 100px;
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr;
+}
+
+.cirriculum_item {
+    border: 1px dotted red;
+    line-height: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.3em;
+}
+
+.cirriculum_item a {
+    color: darkolivegreen;
+}
+
+/* Calendar */
+#calendar_title {
+    font-size: 45px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.calendar_note {
+    padding-left: 70px;
+}
+
+iframe{
+    padding-top: 0px;
+    width: 90%;
+    height: 900px;
+    display: block;
+    margin: 30px auto;
+}
+
+/* Press */
+#press_title {
+    font-size: 45px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.press_container{
+    margin: 0px 100px;
+    display: grid;
+    grid-template-columns: auto auto;   
+}
+
+.grid_item {
+    padding-top: 20px
+}
+
+figure img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    padding: 10px 30px 0px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+figure p
+{
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
