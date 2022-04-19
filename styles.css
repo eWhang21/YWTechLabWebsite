@@ -1,6 +1,22 @@
+body {
+    font-family: 'Buda', cursive;
+    font-family: 'Cabin', sans-serif;
+}
+
 a:link, a:visited {
     text-decoration: none;
     color: black;
+}
+
+.landing_title {
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    line-height: 2em;
+    color: white;
+    text-shadow: 1px 1px 20px black;
 }
 
 /* Home */
@@ -8,37 +24,49 @@ nav{
     background-color: #C7CCAD;
 }
 
-.about_container {
-    margin-top: 0;
-}
-
 .landing_pic {
-    background-image: url(assets/glass.jpg);
-    min-height: 840px;
-    opacity: .98;
+    background-image: url(assets/work.jpg);
+    min-height: 700px;
+    opacity: 1;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter:brightness(50%);
+
 }
 
 .about {
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
     line-height: 2em;
+    color: white;
+    text-shadow: 1px 1px 20px black;
+    /*
     border: 2px solid blanchedalmond;
     background-color: rgb(255, 235, 205, .7);
+    */
 }
 
-.about a {
-    color: darkolivegreen;
+.about h1 {
+    font-size: 3em; 
 }
-
 
 /* Recent Work */
+.recentwork_landing_pic {
+    background-image: url(assets/chair.png);
+    min-height: 500px;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(80%);
+}
+
 #work_header{
     text-align: center;
     margin-top: 150px;
@@ -149,10 +177,47 @@ hr {
     left: 12px;
 }
 
+/* Cirriculum */
+.cirriculum_landing_pic {
+    background-image: url(assets/glass.jpg);
+    min-height: 500px;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(80%);
+}
+
+
 /* Calendar */
+.calendar_landing_pic {
+    background-image: url(assets/calendar.jpg);
+    min-height: 500px;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+}
+
+
 iframe{
     width: 90%;
     height: 800px;
     display: block;
     margin: 30px auto;
+}
+
+/* Press */
+.press_landing_pic {
+    background-image: url(assets/hands.jpg);
+    min-height: 500px;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
 }
