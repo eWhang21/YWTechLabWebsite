@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar sticky-top"  role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #5B3B8B;"  role="navigation">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
                 YW Tech Lab Portfolio Group
@@ -28,7 +28,7 @@
                 <div class="navbar-nav">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="recentWorks.html" class="nav-item nav-link">Recent Work</a>
-                    <a href="cirriculum.html" class="nav-item nav-link">Cirriculum</a>
+                    <a href="curriculum.html" class="nav-item nav-link">Curriculum</a>
                     <a href="calendar.html" class="nav-item nav-link">Calendar</a>
                     <a href="press.html" class="nav-item nav-link">Press</a>
                     <a href="contactUs.html" class="nav-item nav-link">Contact Us</a>
@@ -38,38 +38,92 @@
     </nav>
 
     <!-- About Container -->
-    <div class = "test">
-        <div class="landing_pic">
+    <div class="landing_pic"></div>
+        <div class="about about_header py-0">
+            <p class="h1" id="about_header1">YW Tech Lab Portfolio Group</p>
+            <br>
+            <p class="h2" id="about_header2"> "Never stop learning, <br> because life never stops teaching." <p>
         </div>
-        <div>
-            <h1 class="about py-4 w-auto"> YW Tech Lab Portfolio Group</h1>
-            <h3 class="about py-4 w-auto">
-                 <br><br>
-                 Webiste Design and Development
-            </h3>
-            <h2 class="about py-4 w-auto">  </h2>
 
+
+    <h1 class="text-center mt-5 pt-5"> YW Tech Lab Portfolio Group </h1>
+    <p class="text-center  about_text">
+        <br>
+        The YW Tech Lab Portfolio Group is a program created from a 
+        partnership between the YWCA and Northwestern Univserity. Upon completion of YWCA's 4 month YW Tech Lab program, 
+        graduates of each cohort may join the Portfolio group for an additional 10 week web design and development 
+        focused curriculum before joining the design consultancy and development team.
+        <br><br>
+        For more information about the YW Tech Lab, please visit: <a href="https://www.ywca-ens.org/economic-advancement/yw-tech-lab/" target="_blank">here</a>.
+        <br>
+        The YW Tech Lab Portfolio Group works with real clients
+    </p>
+
+    <div class="container-fluid">
+        <div class="row pt-5 mt-5">
+            <div class="col-sm-6 col-lg-6 text-center mt-5">
+                <h2 class="text-center">Work With Us!</h2>
+                <br>
+                We design and create websites for your brand and business!
+                <br><br>
+                Interested in our services or joining our team?
+                <br><br><br>
+                <u>
+                    <a href="contactUs.html" target="_blank"> Contact us! </a>
+                </u>
+                <br><br>
+            </div>
+            <div class="col-sm-6 col-lg-6">
+                <section class="form_container">
+                    <form target="_blank" action="https://formsubmit.co/a5bfd5afd84a442f747a21f47bedd746" method="POST"> 
+                        <div class="form-group mx-sm-4">
+                            <label for="fname" class="py-2">*First name:</label><br>
+                            <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group mx-sm-4">
+                            <label for="lname" class="py-2">*Last name:</label><br>
+                            <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group mx-sm-4 col-sm-15">
+                            <label for="exampleInputEmail1" class="py-2">*Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <br>
+                        <p class="px-4">What are you interested in?</p>
+                        <div class="form-check mx-sm-4">
+                            
+                            <label class="form-check-label" for="purposeCheck">Website Design and Development Services</label>
+                            <input type="checkbox" class="form-check-input" id="purposeCheck">
+                        </div>
+                        
+                        <div class="form-check mx-sm-4">
+                            <label class="form-check-label" for="purposeCheck">Joining the YW Tech Lab Portfolio Group</label>
+                            <input type="checkbox" class="form-check-input" id="purposeCheck">
+                        </div>
+            
+                        <div class="form-group mx-sm-4 col-sm-15">
+                            <label for="exampleFormControlTextarea1"></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Message"></textarea>
+                        </div>
+                        <div class="hi mx-sm-4 px-0">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block mt-3" id="submit_button">Submit</button>
+
+                        </div>
+                    </div>
+                    </form>
+                </section>
+                
+                
+            </div>
         </div>
     </div>
-
-
-    <h1 class="text-center"> YW Tech Lab Portfolio Group </h1>
-    <h2 class="text-center mt-3"> What We Do </h2>
-    <p>
-        <br>
-        The YW Tech Lab is a four month long web development program, 
-        focusing on providing the digital skills to traditionally
-        underrepresented or vulnerable populations. Upon completion of this program, 
-        graduates of each cohort may join the Portfolio group for an additional 
-        10 week web development cirriculum before designing and developing websites with for clients.
-        <br><br>
-        For more information about the YW Tech Lab, click <a href="https://www.ywca-ens.org/economic-advancement/yw-tech-lab/" target="_blank">here</a>. <br>
-    </p>
+    <br>
 
     <h2 class="text-center mt-5">Meet Our Team</h2>
 
     <div class="team container text-center mt-5">
-        <h4> Mentors </h4>
+        <h4> NU Mentors </h4>
         <div class="row mentors my-5">
             <figure class="col-md-4">
                 <img src="assets/avatar.png" alt="avatar" height="200px">
@@ -84,6 +138,7 @@
                 <figcaption class="pt-4">Esther Whang</figcaption>
             </figure>
         </div>
+
         <h4> Team Members </h4>
         <div class="row members my-5">
             <figure class="col-md-4">
@@ -124,26 +179,39 @@
                 <figcaption class="pt-4"> Rinku </figcaption>
             </figure>
         </div>
+
+
+    <h4> NU Tutors </h4>
+        <div class="row members my-5">
+            <figure class="col-md-4">
+                <img src="assets/avatar.png" alt="avatar" height="200px">
+                <figcaption class="pt-4"> Name </figcaption>
+            </figure>
+            <figure class="col-md-4">
+                <img src="assets/avatar.png" alt="avatar" height="200px">
+                <figcaption class="pt-4"> Name </figcaption>
+            </figure>
+            <figure class="col-md-4">
+                <img src="assets/avatar.png" alt="avatar" height="200px">
+                <figcaption class="pt-4"> Name </figcaption>
+            </figure>
+        </div>
+        
+        <div class="row members my-5">
+            <figure class="col-md-4">
+                <img src="assets/avatar.png" alt="avatar" height="200px">
+                <figcaption class="pt-4"> Name </figcaption>
+            </figure>
+            <figure class="col-md-4">
+                <img src="assets/avatar.png" alt="avatar" height="200px">
+                <figcaption class="pt-4"> Name </figcaption>
+            </figure>
+            <figure class="col-md-4">
+                <img src="assets/avatar.png" alt="avatar" height="200px">
+                <figcaption class="pt-4"> Name </figcaption>
+            </figure>
+        </div>
     </div>
-
-
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo dolor in reprehenderit amet.</p>
-
 
 </div>
 
