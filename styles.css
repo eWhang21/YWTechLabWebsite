@@ -11,7 +11,6 @@ a:link, a:visited {
 */
 
 
-
 /* Home */
 nav{
     background-color: #563D7C;
@@ -24,15 +23,17 @@ a:link, a:visited {
 
 
 .landing_pic {
-    background-image: url(assets/meeting.jpg);
-    min-height: 600px;
+    min-height: 500px;
     opacity: 1;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     filter:brightness(50%);
+}
 
+#index_landing_pic{
+    background-image: url(assets/meeting.jpg);
 }
 
 .landing_title {
@@ -61,21 +62,47 @@ a:link, a:visited {
     */
 }
 
+.about_text_container{
+    background-color: #E2DCEC;
+    overflow-x: hidden;
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.about_text{
+    margin: 25px;
+    padding: 0;
+}
+
 .about_header{
     width: 1000px;
     text-align: center;
     position: absolute;
-    top: 25%;
+    top: 35%;
     color: white;
     text-shadow: 1px 1px 20px black;
-    overflow: hidden;
 }
 
 #about_header1{
-    font-size: 5vw; 
-    line-height: 10%vh;
+    font-size: 6vw; 
+    line-height: 7vw
+}
 
+#title_quote{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4vw; 
+    line-height: 6vh;
     word-break: break-word;
+}
+
+#title_quote1{
+    float: left;
+    padding-left: 200px;
+}
+
+#title_quote2{
+    float: right;
+    padding-right: 200px;
 }
 
 #about_header2{
@@ -101,17 +128,54 @@ form{
     display: block;
 }
 
+/* The Modal (background) */
+figure button{
+    background-color: #E2DCEC;
+    padding: 10px 20px;
+}
+
+.member {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+.member_content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
 
 /* Recent Work */
-.recentwork_landing_pic {
+#recentwork_landing_pic {
     background-image: url(assets/chair.png);
-    min-height: 600px;
-    opacity: 1;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(80%);
 }
 
 #work_header{
@@ -121,58 +185,45 @@ form{
 
 .khlalilah_container {
     position: relative;
-}
-
-.khalilah_img {
-    display: block;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 80px;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    z-index: 10;
-    width: 50%;
-
-}
-
-.khalilah_btn  {
-    transition: .5s ease;
+  }
+  
+.khalilah_img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
     opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+  }
+  
+.khlalilah_container:hover .overlay {
+    opacity: .7;
+  }
+  
+#atm_name {
+    color: white;
+    font-size: 60px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.khalilah_img:hover{
-    background-color: black;
-    filter: brightness(50%); 
-}
-  
-.khlalilah_container:hover .khalilah_btn {
-    opacity: 1;
-}
-
-#atm{
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 3em;
-}
-
-.text {
-    background-color: rgb(255, 235, 205, .8);
-    color: black;
-    font-size: 30px;
-    padding: 16px 32px;
-    border: none;
   }
-
-hr {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 
 #moreinworks {
     margin-top: -95px;
@@ -225,15 +276,8 @@ hr {
 }
 
 /* curriculum */
-.curriculum_landing_pic {
+#curriculum_landing_pic {
     background-image: url(assets/glass.jpg);
-    min-height: 600px;
-    opacity: 1;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(80%);
 }
 
 .indent{
@@ -242,7 +286,7 @@ hr {
 
 
 /* Calendar */
-.calendar_landing_pic {
+#calendar_landing_pic {
     background-image: url(assets/calendar.jpg);
     min-height: 500px;
     opacity: 1;
@@ -262,9 +306,9 @@ iframe{
 }
 
 /* Press */
-.press_landing_pic {
+#press_landing_pic {
     background-image: url(assets/hands.jpg);
-    min-height: 600px;
+    min-height: 500px;
     opacity: 1;
     background-attachment: fixed;
     background-position: center;
@@ -272,3 +316,103 @@ iframe{
     background-size: cover;
     filter: brightness(90%);
 }
+
+.date{
+    font-size: 15px;
+    color: darkgray;
+    margin-top: 10px;;
+}
+
+.press_figure1_img:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .landing_pic {
+        min-height: 500px;
+    }
+    
+    #title_quote{
+        font-size: 7vw; 
+        line-height: 2vh;
+    }
+    
+    #title_quote1{
+        float: none;
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    #title_quote2{
+        float: none;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .about_text{
+        margin: 20px;
+        padding: 0;
+    }
+
+    #about_header1{
+        font-size: 8vw; 
+    }
+
+    /* RECENT WORK*/
+    .khlalilah_container {
+        width: 90%;
+      }
+      
+
+
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .about_text{
+        margin: 25px;
+        padding: 0;
+    }
+    
+    #title_quote{
+        font-size: 6vw; 
+        line-height: 3vh;
+    }
+
+    #title_quote1{
+        float: none;
+        text-align: center;
+        padding-left: 5px;
+    }
+    
+    #title_quote2{
+        float: none;
+        text-align: center;
+        padding-right: 5px;
+    }
+    
+  }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .about_header{
+        top: 25%;
+    }
+    #title_quote{
+        font-size: 4vw; 
+        line-height: 5vw;
+    }
+
+    #title_quote1{
+        padding-left: 0;
+    }
+    
+    #title_quote2{
+        padding-right: 0;
+    }
+
+  }
